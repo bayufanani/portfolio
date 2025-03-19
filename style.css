@@ -1,0 +1,92 @@
+:root {
+    --container: #ffffff;
+    --background: #f2f2fa;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    background-color: var(--background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.17rem;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+p {
+    margin-bottom: 0.5rem;
+}
+#intro {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+#intro h1 {
+    margin-bottom: 3rem;
+}
+#content {
+    margin-top: 2rem;
+    background: linear-gradient(to bottom, transparent, var(--container) 50px);
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.info {
+    max-width: 50%;
+}
+.info,
+.image {
+    flex-basis: auto;
+}
+.image > img {
+    width: 100%;
+}
+.card {
+    background-color: var(--container);
+    padding: 0.5rem 1rem;
+}
+.card.blur {
+    backdrop-filter: blur(1rem);
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+@media screen and (max-width: 500px) {
+    #intro {
+        flex-direction: column;
+        gap: 0;
+    }
+    .info {
+        max-width: 100%;
+        order: 2;
+    }
+    .image {
+        order: 1;
+    }
+}
