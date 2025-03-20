@@ -1,0 +1,35 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+.menu > ul {
+    display: flex;
+    list-style-type: none;
+}
+.menu > ul > li {
+    margin: 0 0.5rem;
+}
+h1 {
+    font-size: 2rem;
+}
+.btn {
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+.btn-primary {
+    background-color: #29909a;
+    color: #fff;
+}
+.btn-secondary-outline {
+    border: 1px solid #d1d6d6;
+    color: #29909a;
+}
+a {
+    text-decoration: none;
+}
