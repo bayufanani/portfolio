@@ -328,3 +328,6 @@ footer {
     border-top: 1px solid var(--secondary-background-color);
     padding: 2rem 0;
 }
+.follow h4 {
+    margin: 0.5rem 0;
+}
