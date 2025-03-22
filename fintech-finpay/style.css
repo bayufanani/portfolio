@@ -35,6 +35,32 @@ header {
 .menu > ul > li {
     margin: 0 0.5rem;
 }
+.menu a {
+    padding: 0.5rem 1rem;
+    position: relative;
+}
+.menu a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #023347;
+    transition: all 0.15s ease-in-out;
+    transform: scaleX(0.95);
+    opacity: 0;
+}
+.menu a:hover::after {
+    transform: scaleX(1);
+    opacity: 1;
+}
+.menu a.active::after {
+    transform: scaleX(1);
+    opacity: 1;
+}
 h1,
 h2,
 h3,
@@ -57,19 +83,27 @@ h6 {
     padding: 0.75rem 1.5rem;
     border-radius: var(--default-border-radius);
     text-wrap: nowrap;
-    display: inline-block;
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
 }
 .btn-primary {
     background-color: var(--primary-color);
     color: #fff;
     border: none;
 }
+.btn-primary:hover {
+    background-color: var(--deep-primary-background-color);
+}
 .btn-secondary-outline {
     border: 1px solid var(--secondary-background-color);
+}
+.btn-secondary-outline:hover {
+    background-color: var(--secondary-background-color);
 }
 a {
     text-decoration: none;
     color: var(--text-color);
+    display: inline-block;
 }
 .header-bg,
 .footer-bg {
