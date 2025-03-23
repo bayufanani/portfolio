@@ -128,6 +128,7 @@ a {
     align-items: center;
     margin-top: 3rem;
     gap: 1rem;
+    padding: 0 2rem;
 }
 .hero > .content,
 .hero > .image {
@@ -202,6 +203,7 @@ a {
 }
 .why-us {
     margin-top: 10rem;
+    padding: 0 2rem;
 }
 .why-us h2 {
     margin: 2rem 0;
@@ -241,7 +243,7 @@ a {
 .step-section {
     background-color: var(--deep-primary-background-color);
     color: var(--default-background-color);
-    padding: 5rem 0;
+    padding: 5rem 2rem;
     margin-top: 5rem;
 }
 .step-section .container h2 {
@@ -307,6 +309,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     color: var(--default-background-color);
+    transition: all 0.2s ease-out;
 }
 .plan-list_item_price {
     font-size: 1.5rem;
@@ -344,6 +347,7 @@ a {
 }
 footer {
     margin-top: 5rem;
+    padding: 0 2rem;
 }
 .footer {
     display: flex;
@@ -364,4 +368,14 @@ footer {
 }
 .follow h4 {
     margin: 0.5rem 0;
+}
+.arrow {
+    transition: transform 0.2s ease-out;
+}
+.plan-list_item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--default-shadow);
+}
+.plan-list_item:hover .arrow {
+    transform: rotate(45deg);
 }
