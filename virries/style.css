@@ -1,0 +1,116 @@
+/* Root */
+:root {
+    --color-primary: #7868e6;
+    --color-primary-darker: #6c5ec7;
+    --color-shadow-primary: rgba(177, 164, 252, 0.712);
+    --text-header: #14151d;
+    --text-normal: #7e7f86;
+    --text-header-dark: #ffffff;
+    --text-normal-dark: #d5d0fb;
+}
+/* Element */
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--text-normal);
+}
+h1 {
+    font-size: 3.2rem;
+    line-height: 3.5rem;
+}
+h4 {
+    font-size: 0.75rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-header);
+    font-weight: bold;
+}
+p {
+    line-height: 1.5rem;
+}
+img {
+    width: 100%;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+a {
+    color: var(--text-normal);
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover {
+    color: var(--color-primary);
+}
+
+/* Class */
+.text-primary {
+    color: var(--color-primary);
+}
+.brand h1 {
+    font-size: 1.6rem;
+}
+.brand img {
+    max-width: 32px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu ul {
+    display: flex;
+    gap: 1rem;
+}
+.container {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.section-title {
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 12px var(--color-shadow-primary);
+    display: inline-block;
+    margin: 1rem auto;
+}
+.center {
+    text-align: center;
+    margin: auto;
+}
+.hero-desc {
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+.hero-desc h1 {
+    margin-bottom: 1.6rem;
+}
+.cta-buttons {
+    margin-top: 1.6rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.btn {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--text-normal);
+    border-radius: 2rem;
+}
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--text-header-dark);
+    border-color: var(--color-primary);
+}
+.btn-primary:hover {
+    background-color: var(--color-primary-darker);
+    color: var(--text-header-dark);
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
