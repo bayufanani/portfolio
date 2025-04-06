@@ -70,6 +70,8 @@ a:hover {
 .container {
     padding: 2rem 1rem;
     display: flex;
+    max-width: 1200px;
+    margin: auto;
     flex-direction: column;
 }
 .section-title {
@@ -109,8 +111,4 @@ a:hover {
 .btn-primary:hover {
     background-color: var(--color-primary-darker);
     color: var(--text-header-dark);
-}
-.container {
-    max-width: 1200px;
-    margin: auto;
 }
